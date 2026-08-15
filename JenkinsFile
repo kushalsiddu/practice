@@ -1,0 +1,25 @@
+pipline{
+     agent any
+     stages{
+	stage ('fetching the code from github'){
+	 step {
+	  git branch: 'master' , url: 'https://github.com/kushalsiddu/practice.git'
+	  }
+	}
+	stage ('convert the sorce code to executable code') {
+         step {
+          build: demo1  
+	 }
+	}
+	stage ('testing'){
+         step {
+          echo 'testing stage'
+	 }
+	}
+	stage ('deploy') {
+         step {
+           echo 'Deployement stage'
+	 }
+	}
+     }
+}
