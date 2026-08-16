@@ -3,25 +3,25 @@ pipeline {
 
     stages {
         stage ('fetching the code from github') {
-            step {
+            steps {
                 git branch: 'master', url: 'https://github.com/kushalsiddu/practice.git'
             }
         }
 
         stage ('Converting source code to executable code') {
-            step {
-                build: jenkinsjob
+            steps {
+                build job: 'jenkinsjob'
             }
         }
 
         stage ('Testing stage') {
-            step {
+            steps {
                 echo "This is a testing phase"
             }
         }
 
         stage ('Deploy stage') {
-            step {
+            steps {
                 echo "This is a deploy phase"
             }
         }
