@@ -6,7 +6,7 @@ pipeline {
         stage('Fetching the code from GitHub') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/kushalsiddu/practice.git''
+                    url: 'https://github.com/kushalsiddu/practice.git'
             }
         }
 
