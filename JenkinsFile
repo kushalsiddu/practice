@@ -8,7 +8,7 @@ pipline{
 	}
 	stage ('convert the sorce code to executable code') {
          step {
-          build: demo1  
+          build: demo_job
 	 }
 	}
 	stage ('testing'){
