@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('fetching the code from github') {
             step {
-                git branch: 'master', url: 'https://github.com/dhanunjayvasneha/maven.git'
+                git branch: 'master', url: 'https://github.com/kushalsiddu/practice.git'
             }
         }
 
