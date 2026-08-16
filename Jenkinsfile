@@ -10,7 +10,7 @@ pipeline {
 
         stage ('Converting source code to executable code') {
             steps {
-                build job: 'demojob'
+                build job: 'simplejob'
             }
         }
 
