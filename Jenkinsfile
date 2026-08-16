@@ -12,7 +12,7 @@ pipeline {
 
         stage('Converting source code to executable code') {
             steps {
-                build: 'pipeline'
+                build: 'test-maven'
             }
         }
 
